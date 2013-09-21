@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/masukan" >
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/Btambah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editText1"
+        android:layout_marginTop="100dp"
+        android:hint="@string/tambah" />
+
+    <Button
+        android:id="@+id/Bkurang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Btambah"
+        android:layout_alignBottom="@+id/Btambah"
+        android:layout_marginLeft="22dp"
+        android:layout_toRightOf="@+id/Btambah"
+        android:hint="@string/min" />
+
+    <Button
+        android:id="@+id/Bkali"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Btambah"
+        android:layout_marginTop="14dp"
+        android:layout_toLeftOf="@+id/Bkurang"
+        android:hint="@string/kali" />
+
+    <Button
+        android:id="@+id/Bbagi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Bkali"
+        android:layout_alignBottom="@+id/Bkali"
+        android:layout_alignLeft="@+id/Bkurang"
+        android:hint="@string/bagi" />
+
+    <EditText
+        android:id="@+id/EditText01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editText1"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="@string/masukan"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/Bkali"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="number" />
+
+</RelativeLayout>
